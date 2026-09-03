@@ -1,0 +1,33 @@
+name: Validate
+
+on:
+   push:
+      branches:
+         - main
+   pull_request:
+      branches:
+         - main
+
+permissions:
+   contents: read
+
+concurrency:
+   group: ci-${{ github.ref }}
+   cancel-in-progress: true
+
+jobs:
+   skill-lint:
+      name: Lint Skill
+      runs-on: ubuntu-latest
+
+      steps:
+         - name: Checkout
+           uses: actions/checkout@v7
+
+         - name: Set up Node.js
+           uses: actions/setup-node@v7
+           with:
+              node-version-file: '.nvmrc'
+
+         - name: Lint Skills
+           run: node scripts/skill-lint.mjs

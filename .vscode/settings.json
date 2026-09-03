@@ -1,0 +1,39 @@
+{
+   // Workbench
+   "workbench.browser.openLocalhostLinks": false,
+
+   // Tooling
+   "npm.packageManager": "pnpm",
+
+   // Formatter
+   "oxc.fmt.configPath": ".oxfmtrc.json",
+   "editor.defaultFormatter": "oxc.oxc-vscode",
+   "editor.formatOnSaveMode": "file",
+   "editor.formatOnSave": true,
+   "editor.codeActionsOnSave": {
+      "source.format.oxc": "explicit",
+      "source.fixAll.oxc": "explicit"
+   },
+   "[json][jsonc]": {
+      "editor.defaultFormatter": "oxc.oxc-vscode",
+      "editor.formatOnSave": true
+   },
+
+   // JSON Schemas
+   "json.schemaDownload.enable": true,
+
+   // Files
+   "files.associations": {
+      ".editorconfig": "properties",
+      "pnpm-lock.yaml": "plaintext",
+      "*.md": "markdown"
+   },
+   "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
+   },
+   "chatgpt.commentCodeLensEnabled": false
+}

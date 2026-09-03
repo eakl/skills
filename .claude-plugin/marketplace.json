@@ -1,0 +1,19 @@
+{
+   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+   "name": "eakl-skills-marketplace",
+   "description": "Skills for AI coding agents",
+   "owner": {
+      "name": "eakl",
+      "url": "https://github.com/eakl"
+   },
+   "plugins": [
+      {
+         "name": "eakl-skills",
+         "description": "Skills for AI coding agents",
+         "version": "0.0.1",
+         "source": "./",
+         "homepage": "https://github.com/eakl/skills",
+         "keywords": ["skills", "agents", "commands"]
+      }
+   ]
+}

@@ -1,0 +1,11 @@
+{
+   "name": "eakl-skills",
+   "description": "Skills for AI coding agents",
+   "version": "0.0.1",
+   "author": { "name": "eakl" },
+   "homepage": "https://github.com/eakl/skills",
+   "repository": "https://github.com/eakl/skills",
+   "license": "MIT",
+   "skills": ["./commands"],
+   "agents": ["./agents/"]
+}
