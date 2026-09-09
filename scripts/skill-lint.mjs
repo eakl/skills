@@ -87,16 +87,32 @@ for (const dir of listSkillDirs('commands')) {
    }
 }
 
-// --- agents (every plugin.json agents[] path must exist and be valid) ---
+// --- agents (every plugin.json agents[] entry must exist and be valid) ---
+// Entries may be a Markdown file or a directory containing agent .md files.
+function collectAgentFiles(entry) {
+   if (!existsSync(entry)) return null
+   if (statSync(entry).isDirectory()) {
+      const out = []
+      for (const name of readdirSync(entry)) {
+         out.push(...(collectAgentFiles(join(entry, name)) ?? []))
+      }
+      return out
+   }
+   return entry.endsWith('.md') ? [entry] : []
+}
+
 if (plugin) {
-   for (const path of plugin.agents ?? []) {
-      if (!existsSync(path)) {
-         errors.push(`plugin.json agents[]: ${path} does not exist`)
+   for (const entry of plugin.agents ?? []) {
+      const files = collectAgentFiles(entry)
+      if (files === null) {
+         errors.push(`plugin.json agents[]: ${entry} does not exist`)
          continue
       }
-      const fm = parseFrontmatter(path)
-      if (!fm.name) errors.push(`${path}: frontmatter missing "name"`)
-      if (!fm.description) errors.push(`${path}: frontmatter missing "description"`)
+      for (const path of files) {
+         const fm = parseFrontmatter(path)
+         if (!fm.name) errors.push(`${path}: frontmatter missing "name"`)
+         if (!fm.description) errors.push(`${path}: frontmatter missing "description"`)
+      }
    }
 }
 
