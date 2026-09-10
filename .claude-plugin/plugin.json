@@ -6,6 +6,5 @@
    "homepage": "https://github.com/eakl/skills",
    "repository": "https://github.com/eakl/skills",
    "license": "MIT",
-   "skills": ["./commands"],
-   "agents": ["./agents"]
+   "skills": ["./commands", "./skills"]
 }
