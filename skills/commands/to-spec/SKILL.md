@@ -243,7 +243,7 @@ The specification must allow an implementation agent to proceed without inventin
 
 ## Output
 
-Emit the specification using [Specification](./templates/spec.template.md), then stop.
+Emit the specification using the template [Specification](./templates/spec.template.md) then publish it to the project's issue tracker. Then stop.
 
 Always include the common sections. Under `Design`, include only applicable groups and sections:
 
