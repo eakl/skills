@@ -2,7 +2,7 @@
 name: to-tickets
 description: Convert a specification, a plan, or the current conversation into a set of self-contained, implementation-ready tracer-bullets. Use when implementation should be decomposed into independently executable vertical slices.
 user-invocable: true
-disable-model-invocation: false
+disable-model-invocation: true
 ---
 
 # To Tickets

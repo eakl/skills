@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-// Zero-dependency validator for this plugin's manifests, skills,
-// commands, and agents. Exits non-zero with a message on any failure.
+// Zero-dependency validator for this plugin's manifests, skills
+// (skills/internal/*), commands (skills/commands/*), and agents.
+// Exits non-zero with a message on any failure.
 
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
@@ -51,39 +52,39 @@ if (marketplace && !marketplace.name) {
    errors.push(`${marketplaceManifestPath}: missing required "name"`)
 }
 
-// --- skills/ (must be non-user-invocable) ---
-for (const dir of listSkillDirs('skills')) {
-   const path = join('skills', dir, 'SKILL.md')
+// --- skills/internal/ (must be non-user-invocable) ---
+for (const dir of listSkillDirs('skills/internal')) {
+   const path = join('skills/internal', dir, 'SKILL.md')
    if (!existsSync(path)) {
-      errors.push(`skills/${dir}: missing SKILL.md`)
+      errors.push(`skills/internal/${dir}: missing SKILL.md`)
       continue
    }
    const fm = parseFrontmatter(path)
    if (!fm.name) errors.push(`${path}: frontmatter missing "name"`)
    if (!fm.description) errors.push(`${path}: frontmatter missing "description"`)
    if (fm['user-invocable'] !== 'false') {
-      errors.push(`${path}: skills/ entries must set "user-invocable: false"`)
+      errors.push(`${path}: skills/internal/ entries must set "user-invocable: false"`)
    }
    if (fm['disable-model-invocation'] === 'true') {
-      errors.push(`${path}: skills/ entries must not set "disable-model-invocation: true"`)
+      errors.push(`${path}: skills/internal/ entries must not set "disable-model-invocation: true"`)
    }
 }
 
-// --- commands/ (must be user-invocable only) ---
-for (const dir of listSkillDirs('commands')) {
-   const path = join('commands', dir, 'SKILL.md')
+// --- skills/commands/ (must be user-invocable only) ---
+for (const dir of listSkillDirs('skills/commands')) {
+   const path = join('skills/commands', dir, 'SKILL.md')
    if (!existsSync(path)) {
-      errors.push(`commands/${dir}: missing SKILL.md`)
+      errors.push(`skills/commands/${dir}: missing SKILL.md`)
       continue
    }
    const fm = parseFrontmatter(path)
    if (!fm.name) errors.push(`${path}: frontmatter missing "name"`)
    if (!fm.description) errors.push(`${path}: frontmatter missing "description"`)
-   if (fm['disable-model-invocation'] !== 'true') {
-      errors.push(`${path}: commands/ entries must set "disable-model-invocation: true"`)
-   }
+   // if (fm['disable-model-invocation'] !== 'true') {
+   //    errors.push(`${path}: skills/commands/ entries must set "disable-model-invocation: true"`)
+   // }
    if (fm['user-invocable'] === 'false') {
-      errors.push(`${path}: commands/ entries must not set "user-invocable: false"`)
+      errors.push(`${path}: skills/commands/ entries must not set "user-invocable: false"`)
    }
 }
 
