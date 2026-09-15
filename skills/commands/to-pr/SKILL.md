@@ -4,7 +4,6 @@ description: Draft and create a GitHub pull request from the current branch.
 user-invocable: true
 disable-model-invocation: false
 disallowed-tools: Bash(git reset --hard) Bash(git push --force) Bash(git rebase main) Bash(git clean -fd) Bash(git checkout .) Bash(git commit --amend)
-allowed-tools: Bash(git *) Bash(gh pr *) Bash(gh repo *) Bash(gh issue *)
 ---
 
 # To PR
