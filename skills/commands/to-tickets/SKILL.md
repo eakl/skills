@@ -79,7 +79,7 @@ If any check fails, revise the tickets before continuing.
 
 ### 5. Generate tickets
 
-Use this template for every ticket: [Ticket template](./templates/ticket.template.md)
+Use this template for every ticket: [Ticket template](templates/ticket.template.md)
 
 ## Completion rule
 

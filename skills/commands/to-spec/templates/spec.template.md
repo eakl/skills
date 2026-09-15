@@ -1,6 +1,6 @@
 ---
 name: SPEC-{{ specification title }}
-description: { { specification description } }
+description: "{{ specification description }}"
 status: draft
 ---
 

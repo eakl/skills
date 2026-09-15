@@ -13,7 +13,7 @@ Help the user understand the current topic of conversation visually. Skip the pr
 
 ## Visuals
 
-Use [Notation](../../../shared/code-notations.md) to select the appropriate set of visuals that makes the point clear.
+Use the `Skill` tool with "use-code-notation" to select the appropriate set of visuals that makes the point clear.
 
 ## Diff blocks
 
@@ -94,14 +94,14 @@ Bash(open path/to/show-me-{description}.html)
 
 Include only the calls, files, components, props, states, boundaries, and labels required to explain:
 
-- the user's current question, orl
+- the user's current question, or
 - the options needed to resolve the current discussion point.
 
 Do not expand the scope beyond the current topic.
 
 **Use judgement**:
 
-You may use one visual, or you may use several visual. It is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
+You may use one visual, or you may use several visuals. It is unlikely you will use all of them. Use your judgement and don't overwhelm the user.
 
 ## Completion check
 

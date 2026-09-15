@@ -15,7 +15,7 @@ The specification is a **typed architecture handoff**: required behavior, contra
 
 This skill is design-only. Do not implement the specification.
 
-Use [Notation](../../../shared/code-notations.md) for all code-shaped architectural representations. Select the smallest applicable notation set. Do not duplicate the same information across notations unless each view adds implementation-relevant information.
+Use the `Skill` tool with "use-code-notation" for all code-shaped architectural representations. Select the smallest applicable notation set. Do not duplicate the same information across notations unless each view adds implementation-relevant information.
 
 ## Workflow
 
@@ -133,7 +133,7 @@ For each affected boundary, define:
 
 Explicitly identify affected boundaries whose contracts remain unchanged when that fact matters to the design.
 
-Use the applicable contract notation from [Notation](../../../shared/code-notations.md).
+Use the `Skill` tool with "use-code-notation" to get applicable contracts notations.
 
 **Gate:**
 
@@ -169,7 +169,7 @@ Represent applicable:
 - runtime hops;
 - observability.
 
-Use [Notation](../../../shared/code-notations.md) to select the appropriate representation for each design question.
+Use the `Skill` tool with "use-code-notation" to select the appropriate representation for each design question.
 
 When existing behavior changes, use the notation's diff modifier when the delta is clearer than restating the complete design.
 
@@ -197,7 +197,7 @@ Show applicable:
 
 State the responsibility owned by each affected file or module.
 
-Use the applicable structure notation from [Notation](../../../shared/code-notations.md).
+Use the `Skill` tool with "use-code-notation" to get applicable structure notations.
 
 **Gate:**
 
@@ -235,7 +235,7 @@ Before emitting, verify:
 - correctness evidence covers required behavior;
 - unresolved design-significant information is explicit;
 - sections do not contradict or unnecessarily duplicate each other;
-- every code-shaped representation follows [Notation](../../../shared/code-notations.md).
+- every code-shaped representation follows the code notation format (use the `Skill` tool with "use-code-notation" to get them)..
 
 Define each fact once in its canonical section. Reference it elsewhere instead of restating it.
 
@@ -243,7 +243,7 @@ The specification must allow an implementation agent to proceed without inventin
 
 ## Output
 
-Emit the specification using the template [Specification](./templates/spec.template.md) then publish it to the project's issue tracker. Then stop.
+Emit the specification using the template [Specification](templates/spec.template.md) then publish it to the project's issue tracker. Then stop.
 
 Always include the common sections. Under `Design`, include only applicable groups and sections:
 
@@ -254,4 +254,4 @@ Always include the common sections. Under `Design`, include only applicable grou
 
 Do not implement. Do not ask to implement unless explicitly requested.
 
-Use [Notation](../../../shared/code-notations.md) for code-shaped representations.
+Use the `Skill` tool with "use-code-notation" for code-shaped representations.
