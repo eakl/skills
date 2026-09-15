@@ -1,5 +1,5 @@
 ---
-name: domain-modeling
+name: use-domain-modeling
 description: Build and sharpen then project's domain model. Use when defining, challenging, or changing domain terminology, relationships, or glossary entries.
 user-invocable: false
 disable-model-invocation: false
@@ -9,7 +9,7 @@ disable-model-invocation: false
 
 ## Purpose
 
-Build and sharpen then project's domain model. Use only when the domain model is being changed. Reading existing domain vocabulary does not activate this skill.
+Build and sharpen the project's domain model. Use only when the domain model is being changed. Reading existing domain vocabulary does not activate this skill.
 
 ## Files
 
@@ -69,7 +69,7 @@ Do not write unresolved terminology to the glossary.
 Immediately after a term is resolved:
 
 - Add or update it in the applicable `GLOSSARY.md`.
-- Follow [GLOSSARY](./references/GLOSSARY.md).
+- Follow [GLOSSARY](references/GLOSSARY.md).
 - Include domain meaning only.
 - Exclude implementation details, design decisions, specifications, and unresolved questions.
 
@@ -83,11 +83,11 @@ Create an ADR only when all of the following are true:
 
 Otherwise, do not create one.
 
-When required, use [ADR](./references/ADR.md).
+When required, use [ADR](references/ADR.md).
 
 ## Validation
 
-Before completing the domain-modeling work, verify:
+Before completing the use-domain-modeling work, verify:
 
 - Every resolved term changed during the session is represented in the applicable glossary.
 - No unresolved or ambiguous term was added.

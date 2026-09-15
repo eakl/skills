@@ -10,8 +10,8 @@ disable-model-invocation: true
 Scaffold the project's context that the tools and skills will rely on:
 
 - **Issue tracker**: where issues live (GitHub by default; local markdown is also supported out of the box).
-- **Project's documentation**: where the documentation folder live, and the rules for reading it.
-- **Domain documentation**: where `GLOSSARY.md` and ADRs lives, and the consumer rules for reading them
+- **Project's documentation**: where the documentation folder lives, and the rules for reading it.
+- **Domain documentation**: where `GLOSSARY.md` and ADRs live, and the consumer rules for reading them.
 
 This is a prompt-driven skill, not a deterministic script. Explore, present what you found, confirm with the user, then write.
 
@@ -27,7 +27,7 @@ Look at the current repo to understand its starting state. Read whatever exists;
 - `docs/adr/` and any `src/*/docs/adr/` directories
 - `docs/agents/`: is this directory exists?
 - `.scratch/`: this is a sign that a local-markdown issue tracker convention is already in use.
-- Monorepo signals: a `workspace:` entry in `pubspec.yaml`, or a populated `packages/*` with its own `src/`. These are present only in a genuinely large multi-package repo; their absence means single-glossary.
+- Monorepo signals: a `pnpm-workspace.yaml`, a `workspaces` field in package.json, or a populated packages/* with its own src/. These are present only in a genuinely large multi-package repo; their absence means single-glossary repo.
 
 ### 2. Present findings and ask
 
@@ -101,10 +101,10 @@ The block:
 
 Then write the docs files using the seed templates in this skill folder as a starting point:
 
-- [issue-tracker-github.md](./references/issue-tracker-github.md): Remote issue tracker.
-- [issue-tracker-linear.md](./references/issue-tracker-linear.md): Linear issue tracker.
-- [issue-tracker-local.md](./references/issue-tracker-local.md): local-markdown issue tracker.
-- [domain.md](./references/domain.md): Domain documentation.
+- [issue-tracker-github.md](references/issue-tracker-github.md): Remote issue tracker.
+- [issue-tracker-linear.md](references/issue-tracker-linear.md): Linear issue tracker.
+- [issue-tracker-local.md](references/issue-tracker-local.md): local-markdown issue tracker.
+- [domain.md](references/domain.md): Domain documentation.
 
 For "other" issue trackers, write `docs/agents/issue-tracker.md` from scratch using the user's description.
 

@@ -1,4 +1,11 @@
-# Notation
+---
+name: use-code-notation
+description: Documents software architecture and implementation designs using the code-notation formats. Use when you need to answer design questions such as architecture and implementation plans, feature specifications, design reviews involving contracts, transformations, behavior, states, events, execution paths, data flow, system interactions, UI structure and behavior, accessibility, file organization, or design changes.
+user-invocable: false
+disable-model-invocation: false
+---
+
+# Code Notation
 
 Use the smallest notation set that answers the design question precisely. Do not express the same information in multiple notations unless each view adds information required for implementation.
 

@@ -51,7 +51,7 @@ Use only when the repository contains multiple glossaries.
 
 ## Glossaries
 
-- [{Context A}](./path/to/context-a//GLOSSARY.md): {domain owned by this glossary}
+- [{Context A}](./path/to/context-a/GLOSSARY.md): {domain owned by this glossary}
 - [{Context B}](./path/to/context-b/GLOSSARY.md): {domain owned by this glossary}
 
 ## Relationships

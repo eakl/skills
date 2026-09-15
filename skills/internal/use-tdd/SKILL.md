@@ -1,5 +1,5 @@
 ---
-name: tdd
+name: use-tdd
 description: Test-driven development. Use when implementing features or bug fixes test-first, when the user requests red-green development, or when integration tests are required.
 user-invocable: false
 disable-model-invocation: false
@@ -11,7 +11,7 @@ disable-model-invocation: false
 
 A **seam** is a public boundary where behavior is observable without accessing internal implementation. Tests are written at seams only.
 
-A **slice** is one cycle consisting of one failing test followed by the minimum production code required to makes it pass.
+A **slice** is one cycle consisting of one failing test followed by the minimum production code required to make it pass.
 
 ## Purpose
 
@@ -28,8 +28,8 @@ Before proposing tests, explore the codebase:
 - Read `GLOSSARY.md` if it exists.
 - Read applicable ADRs.
 - Inspect existing public interfaces, domain vocabulary, and test conventions.
-- Read [tests.md](./references/tests.md) for test examples.
-- Read [mocking.md](./references/mocking.md) before introducing mocks.
+- Read [tests.md](references/tests.md) for test examples.
+- Read [mocking.md](references/mocking.md) before introducing mocks.
 
 ## 2. Confirm test seams
 

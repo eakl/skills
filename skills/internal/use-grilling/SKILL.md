@@ -1,5 +1,5 @@
 ---
-name: grilling
+name: use-grilling
 description: Grill the user relentlessly about a plan, decision, or idea until every relevant decision is explicit and a shared understanding is reached. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrase.
 user-invocable: false
 disable-model-invocation: false

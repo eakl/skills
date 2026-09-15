@@ -3,7 +3,7 @@ name: commit
 description: "Use when committing changes or writing a commit message. Triggers on: 'commit', 'git commit', 'commit changes', 'write a commit message'"
 user-invocable: false
 disable-model-invocation: false
-allowed-tools: Bash(git add *) Bash(git commit *) Bash(git status *)
+disallowed-tools: Bash(git reset --hard) Bash(git push --force) Bash(git rebase main) Bash(git clean -fd) Bash(git checkout .) Bash(git commit --amend)
 ---
 
 # Commit

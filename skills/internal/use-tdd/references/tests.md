@@ -36,7 +36,7 @@ test('created user can be retrieved', async () => {
 
 ## Bad Tests
 
-Reject a test if it does not satisfies those conditions:
+Reject a test if it does not satisfy those conditions:
 
 - Mocks an internal collaborator.
 - Tests a private method.

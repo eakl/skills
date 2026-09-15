@@ -5,4 +5,4 @@ user-invocable: true
 disable-model-invocation: true
 ---
 
-Call the `Skill` tool with "grilling".
+Call the `Skill` tool with "use-grilling".

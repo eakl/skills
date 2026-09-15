@@ -7,4 +7,4 @@ disable-model-invocation: true
 
 Call the `Skill` tool twice.
 
-Call the `Skill` tool with "grilling" AND call the `Skill` tool with `domain-modeling`.
+Call the `Skill` tool with "use-grilling" AND call the `Skill` tool with "use-domain-modeling".
