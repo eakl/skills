@@ -27,7 +27,15 @@ Look at the current repo to understand its starting state. Read whatever exists;
 - `docs/adr/` and any `src/*/docs/adr/` directories
 - `docs/agents/`: does this directory exists?
 - `.scratch/`: this is a sign that a local-markdown issue tracker convention is already in use.
-- Monorepo signals: a `pnpm-workspace.yaml`, a `workspaces` field in package.json, or a populated packages/* with its own src/. These are present only in a genuinely large multi-package repo; their absence means single-glossary repo.
+- Is the project a monorepo or a single-package repository?
+
+Monorepo signals:
+
+- a workspace manifest or configuration file exists in the repository root (e.g. `pnpm-workspace.yaml`);
+- multiple packages/module directories containing their own manifests and source code.
+
+Only consider signals that already exist in the repository. If none are present, treat the repository as a single-package repository.
+
 
 ### 2. Present findings and ask
 
