@@ -235,7 +235,7 @@ Before emitting, verify:
 - correctness evidence covers required behavior;
 - unresolved design-significant information is explicit;
 - sections do not contradict or unnecessarily duplicate each other;
-- every code-shaped representation follows the code notation format (use the `Skill` tool with "use-code-notation" to get them)..
+- every code-shaped representation follows the code notation format (use the `Skill` tool with "use-code-notation" to get them).
 
 Define each fact once in its canonical section. Reference it elsewhere instead of restating it.
 

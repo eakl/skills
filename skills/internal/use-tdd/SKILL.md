@@ -25,7 +25,8 @@ Use this skill during implementation. Do not refactor beyond changes required to
 
 Before proposing tests, explore the codebase:
 
-- Read `GLOSSARY.md` if it exists.
+- Read `GLOSSARY-MAP.md` if it exists and the relevant package `GLOSSARY.md`.
+- Otherwise read root `GLOSSARY.md` if it exists.
 - Read applicable ADRs.
 - Inspect existing public interfaces, domain vocabulary, and test conventions.
 - Read [tests.md](references/tests.md) for test examples.

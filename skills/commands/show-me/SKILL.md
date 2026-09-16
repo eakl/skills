@@ -108,7 +108,7 @@ You may use one visual, or you may use several visuals. It is unlikely you will 
 Before finishing, verify that:
 
 - the visual directly answers the current discussion point,
-- each visuals is placed next to a short supporting text,
+- each visual is placed next to a short supporting text,
 - the selected format is the simplest adequate one,
 - every included element contributes to the explanation,
 - no required ownership, order, state, or boundary is hidden,

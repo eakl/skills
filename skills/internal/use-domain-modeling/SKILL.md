@@ -1,6 +1,6 @@
 ---
 name: use-domain-modeling
-description: Build and sharpen then project's domain model. Use when defining, challenging, or changing domain terminology, relationships, or glossary entries.
+description: Build and sharpen the project's domain model. Use when defining, challenging, or changing domain terminology, relationships, or glossary entries.
 user-invocable: false
 disable-model-invocation: false
 ---

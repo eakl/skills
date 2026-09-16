@@ -25,7 +25,7 @@ Look at the current repo to understand its starting state. Read whatever exists;
 - `AGENTS.md` and `CLAUDE.md` at the repo root: does either exist? Is there already an `## Project Context` section in either?
 - `GLOSSARY.md` and `GLOSSARY-MAP.md` at the repo root.
 - `docs/adr/` and any `src/*/docs/adr/` directories
-- `docs/agents/`: is this directory exists?
+- `docs/agents/`: does this directory exists?
 - `.scratch/`: this is a sign that a local-markdown issue tracker convention is already in use.
 - Monorepo signals: a `pnpm-workspace.yaml`, a `workspaces` field in package.json, or a populated packages/* with its own src/. These are present only in a genuinely large multi-package repo; their absence means single-glossary repo.
 

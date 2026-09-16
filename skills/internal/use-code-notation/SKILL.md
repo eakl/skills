@@ -55,7 +55,7 @@ HTTP body: unknown
 
 **Answers**: what rules or algorithms govern behavior.
 
-**Use for**: business rules, conditions, branching, and and behavior where concrete implementation syntax would add noise.
+**Use for**: business rules, conditions, branching, and behavior where concrete implementation syntax would add noise.
 
 ```text
 on(createBooking)
