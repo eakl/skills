@@ -22,7 +22,7 @@ Follow conventional commit format:
 
 - Subject line: max 72 characters.
 - Imperative mood: "add" instead of "added", "fix" instead of "fixed".
-- Scope: the feature name (auth, transfert, wallet, cards, etc.)
+- Scope: the feature name (auth, transfer, wallet, cards, etc.)
 
 **Example**:
 

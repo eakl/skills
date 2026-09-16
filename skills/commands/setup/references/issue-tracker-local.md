@@ -7,7 +7,7 @@ Issues and specs for this repo live as markdown files in `.scratch/`.
 - One feature per directory: `.scratch/<feature-slug>/`.
 - The spec is `.scratch/<feature-slug>/SPECS.md`.
 - Implementation issues are one file per ticket at `.scratch/<feature-slug>/issues/ISS-<NNNN>-<slug>.md`, numbered from 0001, never a single combined tickets file.
-- Triage state is recorded as a `Status:` line near the top of each issue file.
+- Triage state is recorded as a `status:` line near the top of each issue file.
 - Comments and conversation history append to the bottom of the file under a `## Comments` heading
 
 ## When a skill says "publish to the issue tracker"
