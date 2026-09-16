@@ -13,7 +13,9 @@ Build and sharpen the project's domain model. Use only when the domain model is 
 
 ## Files
 
-Use one root glossary by default:
+Determine the repository layout from the project's documentation.
+
+If the project is a single-package repository, use one root `GLOSSARY.md`:
 
 ```text
 /
@@ -24,7 +26,7 @@ Use one root glossary by default:
 └── src/
 ```
 
-If `/GLOSSARY-MAP.md` exists, use it to locate the glossary for the affected context:
+If the project is a monorepo, use a root `/GLOSSARY-MAP.md` and use it to locate the glossary for the affected context:
 
 ```text
 /

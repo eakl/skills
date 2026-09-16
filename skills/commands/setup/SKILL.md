@@ -25,7 +25,7 @@ Look at the current repo to understand its starting state. Read whatever exists;
 - `AGENTS.md` and `CLAUDE.md` at the repo root: does either exist? Is there already an `## Project Context` section in either?
 - `GLOSSARY.md` and `GLOSSARY-MAP.md` at the repo root.
 - `docs/adr/` and any `src/*/docs/adr/` directories
-- `docs/agents/`: does this directory exists?
+- `docs/agents/`: does this directory exist?
 - `.scratch/`: this is a sign that a local-markdown issue tracker convention is already in use.
 - Is the project a monorepo or a single-package repository?
 
@@ -58,13 +58,13 @@ If Linear is selected and the team or project cannot be inferred from existing c
 
 Record the choice in `docs/agents/issue-tracker.md`.
 
-**Section C: Domain documentation.**
+**Section B: Domain documentation.**
 
 Default to single-glossary (one `GLOSSARY.md` at the repo root). This fits almost every repo; write it without asking.
 
 Offer multi-glossary (a root `GLOSSARY-MAP.md` pointing to per-glossary `GLOSSARY.md` files) only when exploration found monorepo signals. Then confirm which layout they want.
 
-**Section B: Project's documentation.**
+**Section C: Project's documentation.**
 
 Project documentation lives in `docs/`
 

@@ -34,7 +34,7 @@ Before proposing tests, explore the codebase:
 
 ## 2. Confirm test seams
 
-Before writing any test :
+Before writing any test:
 
 1. Identify each seam required by the requested behavior.
 2. For each seam, state:
