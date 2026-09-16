@@ -85,6 +85,7 @@ Name it: `show-me-{description}.html`
 Then open it for the user.
 
 ```sh
+# MacOS
 Bash(open path/to/show-me-{description}.html)
 ```
 
