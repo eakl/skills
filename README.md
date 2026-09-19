@@ -37,6 +37,20 @@ Copy `agents/example-agent/`, rename the folder and file, edit the
 frontmatter and system prompt, then add the new path to `agents` in
 `.claude-plugin/plugin.json`.
 
+## Hooks
+
+- ♻️ [Installation](https://github.com/Dicklesworthstone/destructive_command_guard#installation)
+- ⚙️ [Configure](https://github.com/Dicklesworthstone/destructive_command_guard#claude-code-configuration)
+- 💾 [Configuration file](https://github.com/Dicklesworthstone/destructive_command_guard#configuration-hierarchy)
+- 🤖 [Agent profile](https://github.com/Dicklesworthstone/destructive_command_guard#agent-specific-profiles)
+- 📦 [Pack system](https://github.com/Dicklesworthstone/destructive_command_guard#modular-pack-system)
+
+For commands and packs available
+
+```sh
+dcg --help
+```
+
 ## Validation
 
 `node scripts/skill-lint.mjs` checks both manifests parse, every skill

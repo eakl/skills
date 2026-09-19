@@ -1,0 +1,15 @@
+[general]
+
+check_updates = true
+self_heal_hook = true
+
+[packs]
+enabled = ["core.git", "core.filesystem", "cicd.github_actions"]
+
+[git_awareness]
+enabled = false
+protected_branches = ["main"]
+relaxed_branches = ["feat/*"]
+
+[heredoc]
+enabled = true
